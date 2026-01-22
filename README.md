@@ -14,9 +14,20 @@ re-encoding alone can dramatically shrink files (even before any downscaling).
 uv sync
 ```
 
+If you do not use `uv`, set up a virtual environment and install from
+`pyproject.toml`:
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -e .
+```
+
 ## Usage
 ```bash
 uv run python pdf_image_compressor.py <pdf_path> [target]
+```
+Without `uv`:
+```bash
+.venv/bin/python pdf_image_compressor.py <pdf_path> [target]
 ```
 
 Targets:
