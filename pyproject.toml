@@ -1,0 +1,15 @@
+[project]
+name = "pdf-image-compressor"
+version = "0.1.0"
+description = "Compress PDF files by resizing embedded images"
+requires-python = ">=3.9"
+dependencies = [
+    "pdf2image>=1.16.0",
+    "PyMuPDF>=1.23.0",
+    "Pillow>=10.0.0",
+    "pypdf>=4.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
