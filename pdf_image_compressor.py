@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 PDF Image Compressor
 Analyzes image dimensions in a PDF and compresses them based on a target specification.

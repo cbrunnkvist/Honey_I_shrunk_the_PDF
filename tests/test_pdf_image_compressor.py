@@ -52,7 +52,7 @@ class TestPDFCompressor(unittest.TestCase):
         print(f"\nFunctional Test: Compressing '{input_pdf}' ({original_size_mb:.2f} MB) to {target_size_mb:.2f} MB")
 
         # Run the script via subprocess
-        cmd = [sys.executable, "pdf_image_compressor.py", str(input_pdf), f"{target_size_mb}MB"]
+        cmd = [sys.executable, "-m", "pdf_image_compressor", str(input_pdf), f"{target_size_mb}MB"]
         
         result = subprocess.run(cmd, capture_output=True, text=True)
         
