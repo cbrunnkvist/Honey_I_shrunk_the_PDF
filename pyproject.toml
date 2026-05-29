@@ -1,7 +1,8 @@
 [project]
 name = "pdf-image-compressor"
-version = "0.1.0"
+version = "0.1.1"
 description = "Compress PDF files by resizing embedded images"
+readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
     "PyMuPDF>=1.23.0",
